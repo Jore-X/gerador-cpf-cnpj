@@ -34,18 +34,15 @@ function identical_numbers_check(numbersArray) {
   let count = 0;
   let primary_number;
 
-  console.log(numbersArray);
   for (let i = 0; i < numbersArray.length && i <= 8; i++) {
     //__________
     if (i === 0) {
       primary_number = numbersArray[0];
-      console.log("Primeiro número do array: ", primary_number);
       //________
     } else if (numbersArray[i] === primary_number) {
       count++;
     }
   }
-  console.log("Quantidade de números iguais ao primeiro: ", count);
   return count;
 }
 function format_point_cpf(cpf) {
@@ -141,10 +138,8 @@ function cpf_validate(cpf) {
   // .splice() corta o Array
   // .join() junta o Array devolta em uma sequencia só
 
-  console.log(original_verification_digits);
 
   const calculated_verification_digits = calculate_digits(cpf_numbers_array);
-  console.log(calculated_verification_digits);
 
   if (calculated_verification_digits == original_verification_digits) {
     console.log("CPF válido.");

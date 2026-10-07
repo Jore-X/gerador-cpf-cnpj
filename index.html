@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,10 +17,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
-    <title>Gerador de CPF</title>
+    <title>Gerador e Validador de CPF</title>
+    <meta
+      name="description"
+      content="Gere e valide CPFs online de forma rápida e gratuita."
+    />
   </head>
   <body>
     <main>
+      <h1 id="main_title">Gerador e Validador de CPF</h1>
       <div class="cpf-box">
         <div class="cpf-generate-box cpf-boxes">
           <div class="title-box">
@@ -29,7 +34,7 @@
           </div>
           <div class="window-box">
             <div class="checkbox-div">
-              <input type="checkbox" id="formatting_checkbox"/>
+              <input type="checkbox" id="formatting_checkbox" />
               <span>Com pontuação</span>
             </div>
             <button id="cpf_btn_generate" class="action-btn">
@@ -65,11 +70,37 @@
                 <i class="fa-solid fa-circle-check"></i><span>CPF Válido</span>
               </div>
               <div>
-                <i class="fa-solid fa-circle-xmark"></i><span>CPF Inválido</span>
+                <i class="fa-solid fa-circle-xmark"></i
+                ><span>CPF Inválido</span>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="main-description">
+        <h2>Sobre o CPF</h2>
+        <p>
+          O CPF (Cadastro de Pessoas Físicas) é um documento de identificação
+          utilizado no Brasil.
+        </p>
+        <p>
+          Esta ferramenta permite gerar números de CPF para testes e verificar
+          se um CPF possui uma sequência de dígitos válida.
+        </p>
+        <h2>Como Funciona?</h2>
+        <p>
+          O gerador cria 9 dígitos aleatórios e calcula os 2 dígitos
+          verificadores seguindo as regras matemáticas do CPF.
+        </p>
+        <p>
+          Os números gerados são destinados a testes e desenvolvimento e não
+          devem ser utilizados para cadastros ou identificação de pessoas reais.
+        </p>
+        <h2>Como validar um CPF?</h2>
+        <p>
+          Digite os 11 dígitos do CPF no campo de validação. A ferramenta
+          verifica os dígitos e informa se o CPF é matematicamente válido.
+        </p>
       </div>
     </main>
 

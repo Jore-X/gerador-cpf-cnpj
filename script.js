@@ -13,7 +13,6 @@ cpf_generate_btn.addEventListener("click", () => {
   } else {
     cpf_result_field.textContent = cpf_generated;
   }
-  console.log("Formated: ", format_point_cpf(cpf_generated));
 });
 cpf_copy_btn.addEventListener("click", () => {
   const cpf_generated = cpf_result_field.textContent;
@@ -23,7 +22,7 @@ cpf_copy_btn.addEventListener("click", () => {
 const field_responde_validate = document.querySelector(".response-row");
 
 cpf_btn_validate.addEventListener("click", () => {
-  input_value = input_cpf_validate.value;
+  const input_value = input_cpf_validate.value;
   const cpf_response_validate = cpf_validate(input_value);
 
   field_responde_validate.classList.remove("sucess");
