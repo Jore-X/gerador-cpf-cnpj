@@ -48,6 +48,22 @@ function identical_numbers_check(numbersArray) {
   console.log("Quantidade de números iguais ao primeiro: ", count);
   return count;
 }
+function format_point_cpf(cpf) {
+  const clean_cpf = cpf.replace(/\D/g, "");
+  const cpf_to_array = Array.from(clean_cpf);
+
+  const cpf_formated = [
+    ...cpf_to_array.slice(0, 3),
+    ".",
+    ...cpf_to_array.slice(3, 6),
+    ".",
+    ...cpf_to_array.slice(6, 9),
+    "-",
+    ...cpf_to_array.slice(9),
+  ];
+  
+  return cpf_formated.join("");
+}
 
 function generate_cpf_array() {
   let while_loop = true; // Para controlar a finalização do loop while
